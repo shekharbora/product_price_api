@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_27_083614) do
+ActiveRecord::Schema.define(version: 2020_01_27_092453) do
 
   create_table "aws_product_prices", force: :cascade do |t|
     t.string "description"
@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(version: 2020_01_27_083614) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "unit"
+    t.string "location_name"
+    t.string "location_code_name"
   end
 
 end
