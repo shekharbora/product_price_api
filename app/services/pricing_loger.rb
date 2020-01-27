@@ -46,14 +46,14 @@ class PricingLoger
 
 	def create_product(price_data,date,location_name)
     aws_price = AwsProductPrice.new
-    aws_price.description        = price_data['description'] 
-    aws_price.begin_range        = price_data['beginRange'] 
-    aws_price.end_range          = price_data['endRange']
-    aws_price.price_per_unit     = price_data['pricePerUnit']['USD']
-    aws_price.unit               = price_data['unit']
-    aws_price.location_name      = location_name
-    aws_price.location_code_name = get_code_name(location_name)
-    aws_price.effective_date     = date         
+    aws_price.description        = price_data['description'] || ''
+    aws_price.begin_range        = price_data['beginRange'] || ''
+    aws_price.end_range          = price_data['endRange'] || ''
+    aws_price.price_per_unit     = price_data['pricePerUnit']['USD'] || 0.0
+    aws_price.unit               = price_data['unit'] || ''
+    aws_price.location_name      = location_name || ''
+    aws_price.location_code_name = get_code_name(location_name) || ''
+    aws_price.effective_date     = date    
     aws_price.save
   end
 
