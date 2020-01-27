@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  begin_range: MyString
+  end_range: MyString
+  price_per_unit: MyString
+  effective_date: 2020-01-27 12:19:15
+
+two:
+  description: MyString
+  begin_range: MyString
+  end_range: MyString
+  price_per_unit: MyString
+  effective_date: 2020-01-27 12:19:15

@@ -1,0 +1,2 @@
+class AwsProductPrice < ApplicationRecord
+end
